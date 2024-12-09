@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>NeuraSense - Analysis Results</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/rombo@1.0.0/rombo.min.css" />
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: none;
+  color: #ddd;
+  position: relative;
+  overflow-x: hidden;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Fullscreen GIF background (gram.gif) */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("{{ url_for('static', filename='images/gram.gif') }}") no-repeat center center/cover;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.results-card {
+  background: #1e1e1e;
+  border-radius: 10px;
+  max-width: 700px;
+  width: 100%;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  position: relative;
+}
+
+.results-card h1 {
+  font-size: 2em;
+  font-weight: normal;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: normal;
+  margin-bottom: 20px;
+
+  /* Gradient background for the text */
+  background: linear-gradient(90deg, #6ee7b7, #f472b6);
+
+  /* Standard property for future compatibility */
+  background-clip: text;
+  
+  /* Vendor prefix for WebKit browsers (Chrome, Safari) */
+  -webkit-background-clip: text;
+
+  /* Make the text itself transparent so the gradient shows through */
+  color: transparent;
+
+  /* Required for WebKit browsers to ensure the text fill is transparent */
+  -webkit-text-fill-color: transparent;
+}
+
+ul {
+  list-style: disc inside;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+p {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.back-btn {
+  display: inline-block;
+  background: #1f2937;
+  color: #ddd;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+.back-btn:hover {
+  background: #374151;
+}
+
+</style>
+</head>
+<body>
+
+<div class="results-card aternity-card aternity-card-spring">
+  <h1>Analysis Results</h1>
+
+  <section>
+    <h2>Complexity Metrics</h2>
+    <p><strong>Cyclomatic Complexity:</strong> {{ results.complexity_metrics.cyclomatic_complexity }}</p>
+    <p><strong>Maintainability Index:</strong> {{ results.complexity_metrics.maintainability_index }}</p>
+    <p><strong>Halstead Volume:</strong> {{ results.complexity_metrics.halstead_volume }}</p>
+    <p><strong>Nested Block Depth:</strong> {{ results.complexity_metrics.nested_block_depth }}</p>
+  </section>
+
+  <section>
+    <h2>Style Issues</h2>
+    {% if results.style_issues %}
+    <ul>
+      {% for issue in results.style_issues %}
+      <li>{{ issue }}</li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>No style issues detected.</p>
+    {% endif %}
+  </section>
+
+  <section>
+    <h2>Duplicate Code</h2>
+    {% if results.duplicates %}
+    <ul>
+      {% for line, occ in results.duplicates.items() %}
+      <li><strong>{{ line }}:</strong> {{ occ|join(', ') }}</li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>No duplicate code detected.</p>
+    {% endif %}
+  </section>
+
+  <section>
+    <h2>Vulnerabilities</h2>
+    {% if results.vulnerabilities %}
+    <ul>
+      {% for vuln in results.vulnerabilities %}
+      <li>{{ vuln }}</li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>No vulnerabilities detected.</p>
+    {% endif %}
+  </section>
+
+  <section>
+    <h2>Performance Estimates</h2>
+    {% for func, complexity in results.performance_metrics.items() %}
+    <p>{{ func }}: {{ complexity }}</p>
+    {% endfor %}
+  </section>
+
+  <section>
+    <h2>Inline Comments</h2>
+    {% if results.comment_metrics.comments_found %}
+    <h3>Found Comments</h3>
+    <ul>
+      {% for cm in results.comment_metrics.comments_found %}
+      <li>{{ cm }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% if results.comment_metrics.missing_comments %}
+    <h3>Missing Comments</h3>
+    <ul>
+      {% for mc in results.comment_metrics.missing_comments %}
+      <li>{{ mc }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% if not results.comment_metrics.comments_found and not results.comment_metrics.missing_comments %}
+    <p>No comment-related issues found.</p>
+    {% endif %}
+  </section>
+
+  <section>
+    <h2>Readability Score</h2>
+    <p>{{ results.readability_score }}</p>
+  </section>
+
+  <section>
+    <h2>Refactoring Suggestions</h2>
+    {% if results.refactoring_suggestions %}
+    <ul>
+      {% for suggestion in results.refactoring_suggestions %}
+      <li>{{ suggestion }}</li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>No refactoring suggestions.</p>
+    {% endif %}
+  </section>
+
+  <section>
+    <h2>Unit Test Recommendations</h2>
+    {% if results.test_recommendations %}
+    <ul>
+      {% for recommendation in results.test_recommendations %}
+      <li>{{ recommendation }}</li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>All functions are covered by unit tests.</p>
+    {% endif %}
+  </section>
+
+  <a href="{{ url_for('index') }}" class="back-btn">Analyze Another Code</a>
+</div>
+
+</body>
+</html>
