@@ -1,0 +1,202 @@
+
+--- Analysis Results ---
+File: /Users/aryansehrawat/Documents/Counterspell/Game/STUDY.py
+
+--- Complexity Metrics ---
+**Cyclomatic Complexity** measures the number of linearly independent paths through the code. Higher values indicate more complex code.
+Cyclomatic Complexity: 229
+
+**Maintainability Index** is a composite metric that indicates how maintainable the code is. Higher values mean better maintainability.
+Maintainability Index: 3.55
+
+**Halstead Volume** measures the size of the code's implementation based on operators and operands. Larger volumes suggest more complex code.
+Halstead Volume: 19330.04
+
+**Nested Block Depth** indicates the maximum depth of nested control structures. Deep nesting can make code harder to read.
+Nested Block Depth: 7
+
+--- Style Issues ---
+The following style issues were found:
+Line 30: Line exceeds 79 characters.
+Line 37: Line exceeds 79 characters.
+Line 38: Line exceeds 79 characters.
+Line 128: Line exceeds 79 characters.
+Line 131: Line exceeds 79 characters.
+Line 159: Line exceeds 79 characters.
+Line 212: Line exceeds 79 characters.
+Line 216: Line exceeds 79 characters.
+Line 269: Line exceeds 79 characters.
+Line 273: Line exceeds 79 characters.
+Line 388: Line exceeds 79 characters.
+Line 393: Line exceeds 79 characters.
+Line 400: Line exceeds 79 characters.
+Line 537: Line exceeds 79 characters.
+Line 548: Line exceeds 79 characters.
+Line 551: Line exceeds 79 characters.
+Line 552: Line exceeds 79 characters.
+Line 591: Line exceeds 79 characters.
+Line 605: Line exceeds 79 characters.
+Line 652: Line exceeds 79 characters.
+Line 654: Line exceeds 79 characters.
+Line 658: Line exceeds 79 characters.
+Line 659: Line exceeds 79 characters.
+Line 664: Line exceeds 79 characters.
+Line 671: Line exceeds 79 characters.
+Line 676: Line exceeds 79 characters.
+Line 679: Line exceeds 79 characters.
+Line 683: Line exceeds 79 characters.
+Line 685: Line exceeds 79 characters.
+Line 730: Line exceeds 79 characters.
+Line 741: Line exceeds 79 characters.
+Line 746: Line exceeds 79 characters.
+Line 751: Line exceeds 79 characters.
+Line 752: Line exceeds 79 characters.
+Line 753: Line exceeds 79 characters.
+Line 760: Line exceeds 79 characters.
+Line 761: Line exceeds 79 characters.
+Line 773: Line exceeds 79 characters.
+Line 774: Line exceeds 79 characters.
+Line 776: Line exceeds 79 characters.
+Line 777: Line exceeds 79 characters.
+Line 778: Line exceeds 79 characters.
+Line 793: Line exceeds 79 characters.
+Line 794: Line exceeds 79 characters.
+Line 795: Line exceeds 79 characters.
+Line 831: Line exceeds 79 characters.
+Line 835: Line exceeds 79 characters.
+Line 836: Line exceeds 79 characters.
+Line 842: Line exceeds 79 characters.
+Line 845: Line exceeds 79 characters.
+Line 847: Line exceeds 79 characters.
+Line 855: Line exceeds 79 characters.
+Line 856: Line exceeds 79 characters.
+Line 880: Line exceeds 79 characters.
+Line 927: Line exceeds 79 characters.
+Line 960: Line exceeds 79 characters.
+Line 963: Line exceeds 79 characters.
+Line 986: Line exceeds 79 characters.
+Line 993: Line exceeds 79 characters.
+Line 994: Line exceeds 79 characters.
+Line 1006: Line exceeds 79 characters.
+Line 1010: Line exceeds 79 characters.
+
+--- Duplicate Code ---
+Duplicate code blocks detected:
+Duplicate line 'EXPLOSION_FRAMES.append(frame)' found at lines: 31, 39
+Duplicate line 'try:' found at lines: 29, 43, 29, 55, 29, 467, 29, 493, 29, 886, 29, 991
+Duplicate line 'except Exception as e:' found at lines: 32, 48, 32, 57, 32, 489, 32, 1014
+Duplicate line 'super().__init__()' found at lines: 64, 77, 64, 93, 64, 136, 64, 157, 64, 317, 64, 413
+Duplicate line 'self.rect = self.image.get_rect(center=(x, y))' found at lines: 67, 80, 67, 142, 67, 417
+Duplicate line 'def update(self):' found at lines: 70, 84, 70, 101, 70, 147, 70, 189, 70, 335, 70, 421
+Duplicate line 'self.lifetime -= 1' found at lines: 71, 87, 71, 103
+Duplicate line 'if self.lifetime <= 0:' found at lines: 72, 88, 72, 104
+Duplicate line 'self.kill()' found at lines: 73, 89, 73, 105, 73, 153, 73, 427
+Duplicate line 'self.update_position()' found at lines: 99, 102
+Duplicate line 'self.rect = self.image.get_rect()' found at lines: 98, 163, 98, 251, 98, 322
+Duplicate line 'self.energy = self.max_energy' found at lines: 280, 297
+Duplicate line 'self.speed = self.base_speed' found at lines: 224, 300
+Duplicate line 'self.projectiles = pygame.sprite.Group()' found at lines: 172, 328
+Duplicate line 'self.trail_particles = pygame.sprite.Group()' found at lines: 187, 333
+Duplicate line 'self.pattern_timer = 0' found at lines: 332, 339
+Duplicate line 'else:' found at lines: 308, 345, 308, 395, 308, 428, 308, 486, 308, 669, 308, 817
+Duplicate line 'self.shoot()' found at lines: 217, 351
+Duplicate line 'self.shoot_timer = 0' found at lines: 330, 352
+Duplicate line 'self.projectiles.update()' found at lines: 240, 354
+Duplicate line 'self.create_trail()' found at lines: 255, 355
+Duplicate line 'self.trail_particles.update()' found at lines: 256, 356
+Duplicate line 'dy = self.player.rect.centery - self.rect.centery' found at lines: 360, 376, 360, 398
+Duplicate line 'dist = math.hypot(dx, dy)' found at lines: 361, 377
+Duplicate line 'if dist > 0:' found at lines: 362, 378
+Duplicate line 'def shoot(self):' found at lines: 268, 382
+Duplicate line 'if self.attack_pattern == 0:' found at lines: 341, 386
+Duplicate line 'self.projectiles.add(projectile)' found at lines: 274, 389, 274, 394, 274, 401
+Duplicate line 'elif self.attack_pattern == 1:' found at lines: 343, 390
+Duplicate line 'dx = self.player.rect.centerx - self.rect.centerx' found at lines: 375, 397
+Duplicate line 'projectile = Projectile(self.rect.centerx, self.rect.centery, -1, angle, owner=self)' found at lines: 393, 400
+Duplicate line 'def create_trail(self):' found at lines: 304, 403
+Duplicate line '# Create trail particles' found at lines: 305, 404
+Duplicate line 'particle = Particle(self.rect.centerx, self.rect.centery, color)' found at lines: 310, 406
+Duplicate line 'particle.velocity = [0, 0]' found at lines: 311, 407
+Duplicate line 'particle.lifetime = 15' found at lines: 312, 408
+Duplicate line 'self.trail_particles.add(particle)' found at lines: 313, 409
+Duplicate line 'self.counter = 0' found at lines: 419, 424
+Duplicate line 'self.image = self.frames[self.index]' found at lines: 416, 429
+Duplicate line 'def __init__(self):' found at lines: 156, 432
+Duplicate line ']' found at lines: 120, 457, 120, 839
+Duplicate line '}' found at lines: 186, 473, 186, 808, 186, 816, 186, 824, 186, 917, 186, 918, 186, 1003
+Duplicate line 'config = self.get_level_config()' found at lines: 518, 533
+Duplicate line 'self.reset_level()' found at lines: 450, 568, 450, 635
+Duplicate line 'for event in pygame.event.get():' found at lines: 562, 575, 562, 596, 562, 851
+Duplicate line 'if event.type == pygame.QUIT:' found at lines: 563, 576, 563, 597, 563, 852
+Duplicate line 'running = False' found at lines: 564, 577, 564, 582
+Duplicate line 'if event.type == pygame.KEYDOWN:' found at lines: 565, 578, 565, 599, 565, 854
+Duplicate line 'self.state = "playing"' found at lines: 567, 580
+Duplicate line 'if event.key == pygame.K_p:' found at lines: 579, 600
+Duplicate line 'return False' found at lines: 598, 634, 598, 853
+Duplicate line 'self.start_time = pygame.time.get_ticks()' found at lines: 530, 636
+Duplicate line 'return True' found at lines: 602, 648, 602, 860, 602, 863, 602, 864
+Duplicate line 'for projectile in hits:' found at lines: 653, 665
+Duplicate line 'pygame.display.flip()' found at lines: 554, 713, 554, 780, 554, 797, 554, 849
+Duplicate line 'if self.player.shield > 0:' found at lines: 667, 756
+Duplicate line 'screen.fill(BLACK)' found at lines: 545, 771, 545, 829
+Duplicate line 'return {' found at lines: 802, 810, 802, 818
+Duplicate line 'choosing = False' found at lines: 859, 862
+Duplicate line 'for sound in self.sounds.values():' found at lines: 476, 887
+Duplicate line 'if sound:' found at lines: 477, 888
+Duplicate line 'except:' found at lines: 496, 891
+Duplicate line 'crystal_points.append((x, y))' found at lines: 936, 943
+Duplicate line 'return surface' found at lines: 52, 951, 52, 965, 52, 988
+Duplicate line 'surface = pygame.Surface((size, size), pygame.SRCALPHA)' found at lines: 921, 954, 921, 969
+Duplicate line 'center = size // 2' found at lines: 922, 955, 922, 971
+Duplicate line 'for radius in range(size//2, 0, -2):' found at lines: 925, 958
+Duplicate line 'size = 64' found at lines: 34, 968
+Duplicate line '# Core' found at lines: 962, 983
+Duplicate line 'for i in range(8):' found at lines: 28, 1009
+
+--- Vulnerabilities ---
+No vulnerabilities detected.
+
+--- Performance Estimates ---
+Estimated time complexities for functions:
+Function 'load_explosion_frames': Estimated complexity O(n^1)
+Function 'load_image': Estimated complexity O(1)
+Function 'load_sound': Estimated complexity O(1)
+Function '__init__': Estimated complexity O(n^1)
+Function 'update': Estimated complexity O(1)
+Function 'update_position': Estimated complexity O(n^1)
+Function 'dash': Estimated complexity O(1)
+Function 'shoot': Estimated complexity O(n^1)
+Function 'apply_powerup': Estimated complexity O(1)
+Function 'upgrade': Estimated complexity O(1)
+Function 'create_trail': Estimated complexity O(1)
+Function 'mirror_movement': Estimated complexity O(1)
+Function 'circle_player': Estimated complexity O(1)
+Function 'aggressive_chase': Estimated complexity O(1)
+Function 'load_high_score': Estimated complexity O(1)
+Function 'save_high_score': Estimated complexity O(1)
+Function 'reset_level': Estimated complexity O(1)
+Function 'spawn_powerup': Estimated complexity O(1)
+Function 'create_particles': Estimated complexity O(n^1)
+Function 'show_menu': Estimated complexity O(1)
+Function 'run': Estimated complexity O(n^2)
+Function 'game_loop': Estimated complexity O(n^1)
+Function 'handle_collisions': Estimated complexity O(n^1)
+Function 'draw_game': Estimated complexity O(1)
+Function 'draw_health_bars': Estimated complexity O(1)
+Function 'draw_health_bar': Estimated complexity O(1)
+Function 'draw_hud': Estimated complexity O(1)
+Function 'show_game_over': Estimated complexity O(1)
+Function 'show_pause_menu': Estimated complexity O(1)
+Function 'get_level_config': Estimated complexity O(1)
+Function 'show_upgrade_menu': Estimated complexity O(n^2)
+Function 'create_screen_shake': Estimated complexity O(1)
+Function 'apply_screen_shake': Estimated complexity O(1)
+Function 'create_explosion': Estimated complexity O(1)
+Function 'set_volume': Estimated complexity O(n^1)
+Function 'toggle_sound': Estimated complexity O(1)
+Function 'create_crystal': Estimated complexity O(n^1)
+Function 'create_powerup': Estimated complexity O(n^1)
+Function 'create_explosion_frame': Estimated complexity O(n^1)
+Function 'None': Estimated complexity O(n^1)
+
+--- Inline Comments ---

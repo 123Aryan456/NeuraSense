@@ -1,0 +1,653 @@
+[
+    {
+        "file": "/Users/aryansehrawat/Documents/Counterspell/Game/STUDY.py",
+        "complexity_metrics": {
+            "lines_of_code": 1021,
+            "cyclomatic_complexity": 229,
+            "maintainability_index": 3.550776791595831,
+            "halstead_volume": 19330.04255341251,
+            "nested_block_depth": 7
+        },
+        "style_issues": [
+            "Line 30: Line exceeds 79 characters.",
+            "Line 37: Line exceeds 79 characters.",
+            "Line 38: Line exceeds 79 characters.",
+            "Line 128: Line exceeds 79 characters.",
+            "Line 131: Line exceeds 79 characters.",
+            "Line 159: Line exceeds 79 characters.",
+            "Line 212: Line exceeds 79 characters.",
+            "Line 216: Line exceeds 79 characters.",
+            "Line 269: Line exceeds 79 characters.",
+            "Line 273: Line exceeds 79 characters.",
+            "Line 388: Line exceeds 79 characters.",
+            "Line 393: Line exceeds 79 characters.",
+            "Line 400: Line exceeds 79 characters.",
+            "Line 537: Line exceeds 79 characters.",
+            "Line 548: Line exceeds 79 characters.",
+            "Line 551: Line exceeds 79 characters.",
+            "Line 552: Line exceeds 79 characters.",
+            "Line 591: Line exceeds 79 characters.",
+            "Line 605: Line exceeds 79 characters.",
+            "Line 652: Line exceeds 79 characters.",
+            "Line 654: Line exceeds 79 characters.",
+            "Line 658: Line exceeds 79 characters.",
+            "Line 659: Line exceeds 79 characters.",
+            "Line 664: Line exceeds 79 characters.",
+            "Line 671: Line exceeds 79 characters.",
+            "Line 676: Line exceeds 79 characters.",
+            "Line 679: Line exceeds 79 characters.",
+            "Line 683: Line exceeds 79 characters.",
+            "Line 685: Line exceeds 79 characters.",
+            "Line 730: Line exceeds 79 characters.",
+            "Line 741: Line exceeds 79 characters.",
+            "Line 746: Line exceeds 79 characters.",
+            "Line 751: Line exceeds 79 characters.",
+            "Line 752: Line exceeds 79 characters.",
+            "Line 753: Line exceeds 79 characters.",
+            "Line 760: Line exceeds 79 characters.",
+            "Line 761: Line exceeds 79 characters.",
+            "Line 773: Line exceeds 79 characters.",
+            "Line 774: Line exceeds 79 characters.",
+            "Line 776: Line exceeds 79 characters.",
+            "Line 777: Line exceeds 79 characters.",
+            "Line 778: Line exceeds 79 characters.",
+            "Line 793: Line exceeds 79 characters.",
+            "Line 794: Line exceeds 79 characters.",
+            "Line 795: Line exceeds 79 characters.",
+            "Line 831: Line exceeds 79 characters.",
+            "Line 835: Line exceeds 79 characters.",
+            "Line 836: Line exceeds 79 characters.",
+            "Line 842: Line exceeds 79 characters.",
+            "Line 845: Line exceeds 79 characters.",
+            "Line 847: Line exceeds 79 characters.",
+            "Line 855: Line exceeds 79 characters.",
+            "Line 856: Line exceeds 79 characters.",
+            "Line 880: Line exceeds 79 characters.",
+            "Line 927: Line exceeds 79 characters.",
+            "Line 960: Line exceeds 79 characters.",
+            "Line 963: Line exceeds 79 characters.",
+            "Line 986: Line exceeds 79 characters.",
+            "Line 993: Line exceeds 79 characters.",
+            "Line 994: Line exceeds 79 characters.",
+            "Line 1006: Line exceeds 79 characters.",
+            "Line 1010: Line exceeds 79 characters."
+        ],
+        "duplicates": {
+            "EXPLOSION_FRAMES.append(frame)": [
+                31,
+                39
+            ],
+            "try:": [
+                29,
+                43,
+                29,
+                55,
+                29,
+                467,
+                29,
+                493,
+                29,
+                886,
+                29,
+                991
+            ],
+            "except Exception as e:": [
+                32,
+                48,
+                32,
+                57,
+                32,
+                489,
+                32,
+                1014
+            ],
+            "super().__init__()": [
+                64,
+                77,
+                64,
+                93,
+                64,
+                136,
+                64,
+                157,
+                64,
+                317,
+                64,
+                413
+            ],
+            "self.rect = self.image.get_rect(center=(x, y))": [
+                67,
+                80,
+                67,
+                142,
+                67,
+                417
+            ],
+            "def update(self):": [
+                70,
+                84,
+                70,
+                101,
+                70,
+                147,
+                70,
+                189,
+                70,
+                335,
+                70,
+                421
+            ],
+            "self.lifetime -= 1": [
+                71,
+                87,
+                71,
+                103
+            ],
+            "if self.lifetime <= 0:": [
+                72,
+                88,
+                72,
+                104
+            ],
+            "self.kill()": [
+                73,
+                89,
+                73,
+                105,
+                73,
+                153,
+                73,
+                427
+            ],
+            "self.update_position()": [
+                99,
+                102
+            ],
+            "self.rect = self.image.get_rect()": [
+                98,
+                163,
+                98,
+                251,
+                98,
+                322
+            ],
+            "self.energy = self.max_energy": [
+                280,
+                297
+            ],
+            "self.speed = self.base_speed": [
+                224,
+                300
+            ],
+            "self.projectiles = pygame.sprite.Group()": [
+                172,
+                328
+            ],
+            "self.trail_particles = pygame.sprite.Group()": [
+                187,
+                333
+            ],
+            "self.pattern_timer = 0": [
+                332,
+                339
+            ],
+            "else:": [
+                308,
+                345,
+                308,
+                395,
+                308,
+                428,
+                308,
+                486,
+                308,
+                669,
+                308,
+                817
+            ],
+            "self.shoot()": [
+                217,
+                351
+            ],
+            "self.shoot_timer = 0": [
+                330,
+                352
+            ],
+            "self.projectiles.update()": [
+                240,
+                354
+            ],
+            "self.create_trail()": [
+                255,
+                355
+            ],
+            "self.trail_particles.update()": [
+                256,
+                356
+            ],
+            "dy = self.player.rect.centery - self.rect.centery": [
+                360,
+                376,
+                360,
+                398
+            ],
+            "dist = math.hypot(dx, dy)": [
+                361,
+                377
+            ],
+            "if dist > 0:": [
+                362,
+                378
+            ],
+            "def shoot(self):": [
+                268,
+                382
+            ],
+            "if self.attack_pattern == 0:": [
+                341,
+                386
+            ],
+            "self.projectiles.add(projectile)": [
+                274,
+                389,
+                274,
+                394,
+                274,
+                401
+            ],
+            "elif self.attack_pattern == 1:": [
+                343,
+                390
+            ],
+            "dx = self.player.rect.centerx - self.rect.centerx": [
+                375,
+                397
+            ],
+            "projectile = Projectile(self.rect.centerx, self.rect.centery, -1, angle, owner=self)": [
+                393,
+                400
+            ],
+            "def create_trail(self):": [
+                304,
+                403
+            ],
+            "# Create trail particles": [
+                305,
+                404
+            ],
+            "particle = Particle(self.rect.centerx, self.rect.centery, color)": [
+                310,
+                406
+            ],
+            "particle.velocity = [0, 0]": [
+                311,
+                407
+            ],
+            "particle.lifetime = 15": [
+                312,
+                408
+            ],
+            "self.trail_particles.add(particle)": [
+                313,
+                409
+            ],
+            "self.counter = 0": [
+                419,
+                424
+            ],
+            "self.image = self.frames[self.index]": [
+                416,
+                429
+            ],
+            "def __init__(self):": [
+                156,
+                432
+            ],
+            "]": [
+                120,
+                457,
+                120,
+                839
+            ],
+            "}": [
+                186,
+                473,
+                186,
+                808,
+                186,
+                816,
+                186,
+                824,
+                186,
+                917,
+                186,
+                918,
+                186,
+                1003
+            ],
+            "config = self.get_level_config()": [
+                518,
+                533
+            ],
+            "self.reset_level()": [
+                450,
+                568,
+                450,
+                635
+            ],
+            "for event in pygame.event.get():": [
+                562,
+                575,
+                562,
+                596,
+                562,
+                851
+            ],
+            "if event.type == pygame.QUIT:": [
+                563,
+                576,
+                563,
+                597,
+                563,
+                852
+            ],
+            "running = False": [
+                564,
+                577,
+                564,
+                582
+            ],
+            "if event.type == pygame.KEYDOWN:": [
+                565,
+                578,
+                565,
+                599,
+                565,
+                854
+            ],
+            "self.state = \"playing\"": [
+                567,
+                580
+            ],
+            "if event.key == pygame.K_p:": [
+                579,
+                600
+            ],
+            "return False": [
+                598,
+                634,
+                598,
+                853
+            ],
+            "self.start_time = pygame.time.get_ticks()": [
+                530,
+                636
+            ],
+            "return True": [
+                602,
+                648,
+                602,
+                860,
+                602,
+                863,
+                602,
+                864
+            ],
+            "for projectile in hits:": [
+                653,
+                665
+            ],
+            "pygame.display.flip()": [
+                554,
+                713,
+                554,
+                780,
+                554,
+                797,
+                554,
+                849
+            ],
+            "if self.player.shield > 0:": [
+                667,
+                756
+            ],
+            "screen.fill(BLACK)": [
+                545,
+                771,
+                545,
+                829
+            ],
+            "return {": [
+                802,
+                810,
+                802,
+                818
+            ],
+            "choosing = False": [
+                859,
+                862
+            ],
+            "for sound in self.sounds.values():": [
+                476,
+                887
+            ],
+            "if sound:": [
+                477,
+                888
+            ],
+            "except:": [
+                496,
+                891
+            ],
+            "crystal_points.append((x, y))": [
+                936,
+                943
+            ],
+            "return surface": [
+                52,
+                951,
+                52,
+                965,
+                52,
+                988
+            ],
+            "surface = pygame.Surface((size, size), pygame.SRCALPHA)": [
+                921,
+                954,
+                921,
+                969
+            ],
+            "center = size // 2": [
+                922,
+                955,
+                922,
+                971
+            ],
+            "for radius in range(size//2, 0, -2):": [
+                925,
+                958
+            ],
+            "size = 64": [
+                34,
+                968
+            ],
+            "# Core": [
+                962,
+                983
+            ],
+            "for i in range(8):": [
+                28,
+                1009
+            ]
+        },
+        "vulnerabilities": [],
+        "performance_metrics": {
+            "load_explosion_frames": "O(n^1)",
+            "load_image": "O(1)",
+            "load_sound": "O(1)",
+            "__init__": "O(n^1)",
+            "update": "O(1)",
+            "update_position": "O(n^1)",
+            "dash": "O(1)",
+            "shoot": "O(n^1)",
+            "apply_powerup": "O(1)",
+            "upgrade": "O(1)",
+            "create_trail": "O(1)",
+            "mirror_movement": "O(1)",
+            "circle_player": "O(1)",
+            "aggressive_chase": "O(1)",
+            "load_high_score": "O(1)",
+            "save_high_score": "O(1)",
+            "reset_level": "O(1)",
+            "spawn_powerup": "O(1)",
+            "create_particles": "O(n^1)",
+            "show_menu": "O(1)",
+            "run": "O(n^2)",
+            "game_loop": "O(n^1)",
+            "handle_collisions": "O(n^1)",
+            "draw_game": "O(1)",
+            "draw_health_bars": "O(1)",
+            "draw_health_bar": "O(1)",
+            "draw_hud": "O(1)",
+            "show_game_over": "O(1)",
+            "show_pause_menu": "O(1)",
+            "get_level_config": "O(1)",
+            "show_upgrade_menu": "O(n^2)",
+            "create_screen_shake": "O(1)",
+            "apply_screen_shake": "O(1)",
+            "create_explosion": "O(1)",
+            "set_volume": "O(n^1)",
+            "toggle_sound": "O(1)",
+            "create_crystal": "O(n^1)",
+            "create_powerup": "O(n^1)",
+            "create_explosion_frame": "O(n^1)",
+            "null": "O(n^1)"
+        },
+        "comment_metrics": [
+            [
+                [
+                    900,
+                    "Create and save all game sprites"
+                ],
+                [
+                    800,
+                    "Return configuration for current level"
+                ],
+                [
+                    885,
+                    "Set volume for all sounds (0.0 to 1.0)"
+                ],
+                [
+                    895,
+                    "Toggle all game sounds on/off"
+                ]
+            ],
+            [
+                "Function 'load_explosion_frames' at line 27 is missing a docstring.",
+                "Function 'load_image' at line 42 is missing a docstring.",
+                "Function 'load_sound' at line 54 is missing a docstring.",
+                "Function 'create_game_sprites' at line 899 is missing a docstring.",
+                "Function '__init__' at line 63 is missing a docstring.",
+                "Function 'update' at line 70 is missing a docstring.",
+                "Function '__init__' at line 76 is missing a docstring.",
+                "Function 'update' at line 84 is missing a docstring.",
+                "Function '__init__' at line 92 is missing a docstring.",
+                "Function 'update' at line 101 is missing a docstring.",
+                "Function 'update_position' at line 107 is missing a docstring.",
+                "Function '__init__' at line 135 is missing a docstring.",
+                "Function 'update' at line 147 is missing a docstring.",
+                "Function '__init__' at line 156 is missing a docstring.",
+                "Function 'update' at line 189 is missing a docstring.",
+                "Function 'dash' at line 258 is missing a docstring.",
+                "Function 'shoot' at line 268 is missing a docstring.",
+                "Function 'apply_powerup' at line 276 is missing a docstring.",
+                "Function 'upgrade' at line 289 is missing a docstring.",
+                "Function 'create_trail' at line 304 is missing a docstring.",
+                "Function '__init__' at line 316 is missing a docstring.",
+                "Function 'update' at line 335 is missing a docstring.",
+                "Function 'mirror_movement' at line 358 is missing a docstring.",
+                "Function 'circle_player' at line 366 is missing a docstring.",
+                "Function 'aggressive_chase' at line 374 is missing a docstring.",
+                "Function 'shoot' at line 382 is missing a docstring.",
+                "Function 'create_trail' at line 403 is missing a docstring.",
+                "Function '__init__' at line 412 is missing a docstring.",
+                "Function 'update' at line 421 is missing a docstring.",
+                "Function '__init__' at line 432 is missing a docstring.",
+                "Function 'load_high_score' at line 492 is missing a docstring.",
+                "Function 'save_high_score' at line 499 is missing a docstring.",
+                "Function 'reset_level' at line 503 is missing a docstring.",
+                "Function 'spawn_powerup' at line 532 is missing a docstring.",
+                "Function 'create_particles' at line 540 is missing a docstring.",
+                "Function 'show_menu' at line 544 is missing a docstring.",
+                "Function 'run' at line 556 is missing a docstring.",
+                "Function 'game_loop' at line 588 is missing a docstring.",
+                "Function 'handle_collisions' at line 650 is missing a docstring.",
+                "Function 'draw_game' at line 687 is missing a docstring.",
+                "Function 'draw_health_bars' at line 715 is missing a docstring.",
+                "Function 'draw_health_bar' at line 726 is missing a docstring.",
+                "Function 'draw_hud' at line 735 is missing a docstring.",
+                "Function 'show_game_over' at line 770 is missing a docstring.",
+                "Function 'show_pause_menu' at line 783 is missing a docstring.",
+                "Function 'get_level_config' at line 799 is missing a docstring.",
+                "Function 'show_upgrade_menu' at line 826 is missing a docstring.",
+                "Function 'create_screen_shake' at line 866 is missing a docstring.",
+                "Function 'apply_screen_shake' at line 870 is missing a docstring.",
+                "Function 'create_explosion' at line 879 is missing a docstring.",
+                "Function 'set_volume' at line 884 is missing a docstring.",
+                "Function 'toggle_sound' at line 894 is missing a docstring.",
+                "Function 'create_crystal' at line 920 is missing a docstring.",
+                "Function 'create_powerup' at line 953 is missing a docstring.",
+                "Function 'create_explosion_frame' at line 967 is missing a docstring."
+            ]
+        ],
+        "readability_score": 79.77,
+        "refactoring_suggestions": [
+            "Function 'apply_powerup' has deep nesting (5 levels). Consider simplifying.",
+            "Function 'upgrade' has deep nesting (5 levels). Consider simplifying.",
+            "Function 'run' has deep nesting (7 levels). Consider simplifying.",
+            "Function 'show_upgrade_menu' has deep nesting (5 levels). Consider simplifying."
+        ],
+        "test_recommendations": [
+            "Function 'load_high_score' is not covered by unit tests.",
+            "Function 'save_high_score' is not covered by unit tests.",
+            "Function 'show_game_over' is not covered by unit tests.",
+            "Function 'mirror_movement' is not covered by unit tests.",
+            "Function 'create_trail' is not covered by unit tests.",
+            "Function 'upgrade' is not covered by unit tests.",
+            "Function 'create_game_sprites' is not covered by unit tests.",
+            "Function 'draw_game' is not covered by unit tests.",
+            "Function 'create_explosion' is not covered by unit tests.",
+            "Function 'handle_collisions' is not covered by unit tests.",
+            "Function 'shoot' is not covered by unit tests.",
+            "Function 'draw_hud' is not covered by unit tests.",
+            "Function 'spawn_powerup' is not covered by unit tests.",
+            "Function 'run' is not covered by unit tests.",
+            "Function 'aggressive_chase' is not covered by unit tests.",
+            "Function 'create_powerup' is not covered by unit tests.",
+            "Function 'apply_powerup' is not covered by unit tests.",
+            "Function 'create_explosion_frame' is not covered by unit tests.",
+            "Function 'draw_health_bars' is not covered by unit tests.",
+            "Function 'toggle_sound' is not covered by unit tests.",
+            "Function 'dash' is not covered by unit tests.",
+            "Function 'get_level_config' is not covered by unit tests.",
+            "Function 'create_screen_shake' is not covered by unit tests.",
+            "Function 'apply_screen_shake' is not covered by unit tests.",
+            "Function 'load_image' is not covered by unit tests.",
+            "Function 'create_particles' is not covered by unit tests.",
+            "Function 'update' is not covered by unit tests.",
+            "Function 'load_sound' is not covered by unit tests.",
+            "Function 'show_pause_menu' is not covered by unit tests.",
+            "Function 'set_volume' is not covered by unit tests.",
+            "Function 'show_upgrade_menu' is not covered by unit tests.",
+            "Function 'circle_player' is not covered by unit tests.",
+            "Function '__init__' is not covered by unit tests.",
+            "Function 'reset_level' is not covered by unit tests.",
+            "Function 'show_menu' is not covered by unit tests.",
+            "Function 'game_loop' is not covered by unit tests.",
+            "Function 'draw_health_bar' is not covered by unit tests.",
+            "Function 'update_position' is not covered by unit tests.",
+            "Function 'load_explosion_frames' is not covered by unit tests.",
+            "Function 'create_crystal' is not covered by unit tests."
+        ]
+    }
+]
