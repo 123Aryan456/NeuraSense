@@ -18,11 +18,11 @@ I built NeuraSense to answer those questions. This tool doesn’t just analyze y
 	•	Error and Vulnerability Detection: Spot potential bugs and security flaws before they become nightmares.
 	•	Customized Reports: Export analysis in a neat, readable format for sharing with your team or just flexing.
 
-# Wanna Contribute?
+## Wanna Contribute?
 
 Look, I’m 18, and while I like to think I’m pretty good at this stuff, I know there’s always room for improvement. If you’ve got ideas, feature requests, or just want to geek out about programming, let’s collaborate.
 
-# A Note from me
+## A Note from me
 
 I built NeuraSense to help developers like you make your Python code better—not just functional, but exceptional.
 
